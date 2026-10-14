@@ -1,6 +1,7 @@
 # Setup
 title: 'Missing Semester'
 url: https://missing.csail.mit.edu
+baseurl: /missing-semester  # only to deploy on github pages
 thumbnail: "/static/assets/thumbnails/default.png"
 
 # Settings
