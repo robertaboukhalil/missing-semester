@@ -162,7 +162,7 @@ that you are not the root user (more on that later). At this prompt you
 can type a _command_, which will then be interpreted by the shell. The
 most basic command is to execute a program:
 
-```console
+```bash
 missing:~$ date
 Fri 10 Jan 2020 11:49:31 AM EST
 missing:~$
@@ -172,7 +172,7 @@ Here, we executed the `date` program, which (perhaps unsurprisingly)
 prints the current date and time. The shell then asks us for another
 command to execute. We can also execute a command with _arguments_:
 
-```console
+```bash
 missing:~$ echo hello
 hello
 ```
@@ -206,7 +206,7 @@ separate program (i.e., `which cd` will say "no cd found"). You pass it
 a path, and that path becomes your current working directory. You'll
 also see the working directory reflected in the shell prompt:
 
-```console
+```bash
 missing:~$ cd /bin
 missing:/bin$ cd /
 missing:/$ cd ~
@@ -231,7 +231,7 @@ relative path (anything _not_ starting with `/`), the first path
 component is looked up in the current working directory, and subsequent
 components traverse as usual. For example:
 
-```console
+```bash
 missing:~$ cd /
 missing:/$ cd bin
 missing:/bin$
@@ -241,7 +241,7 @@ There are also two "special" components that exist in every directory:
 `.` and `..`. `.` is "this directory", and `..` is "the parent
 directory". So:
 
-```console
+```bash
 missing:~$ cd /
 missing:/$ cd bin/../bin/../bin/././../bin/..
 missing:/$
@@ -654,3 +654,6 @@ shortest path to the solution.
 1. Dissect the SSH log pipeline from the lecture: what does each step do?
     Then build something similar to find your most-used shell commands from
     `~/.bash_history` (or `~/.zsh_history`).
+
+<script src="https://sandbox.bio/embed.js" data-cwd="missing-semester"></script>
+
